@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 mongoose.set("debug", true);
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/warbler", {
+mongoose.connect("mongodb://lex:password@ds123929.mlab.com:23929/warbler", {
   keepAlive: true
 });
 
