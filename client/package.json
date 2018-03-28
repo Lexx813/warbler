@@ -17,9 +17,11 @@
     "redux-thunk": "^2.2.0"
   },
     "proxy": {
-      "/api/": {
+
+      "/api/*": {
         "target": "http://localhost:8081"
-      },
+      }
+    },
   "scripts": {
     "build-css": "node-sass-chokidar src/styles/scss -o src/styles/css",
     "watch-css": "npm run build-css && node-sass-chokidar src/styles/scss -o src/styles/css --watch --recursive",
