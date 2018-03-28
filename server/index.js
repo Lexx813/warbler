@@ -59,4 +59,4 @@ if (process.env.NODE_ENV === 'production') {
 
 const port = process.env.PORT || 8081;
 app.listen(port);
-console.log('SERVER STARTED');
+console.log(`SERVER STARTED AT ${port}`);
